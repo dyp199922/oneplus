@@ -15,7 +15,10 @@ async function img(){
     src('./src/imgs/*.*')
     .pipe(dest('./dist/imgs'))
 }
-
+async function php(){
+    src('./src/php/*.php')
+    .pipe(dest('./dist/php'))
+}
 // 处理js(ESx -> ES5，压缩)
 async function script(){
     src('./src/script/*.js')
@@ -57,6 +60,7 @@ async function html(){
 task('build',async ()=>{
     await delDist();
     await img();
+    await php();
     await script();
     await sass();
     await html();

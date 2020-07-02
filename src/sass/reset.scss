@@ -1,0 +1,45 @@
+@charset "utf-8";
+    /* 重置样式 */
+html,body,ul,ol,li,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,input{
+    padding: 0;
+    margin: 0;
+}
+*{
+    /* 让所有的元素触发怪异盒模型 */
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: 16px;
+    font-weight: normal;
+}
+ul,ol,li{
+    list-style: none;
+}
+a,u{
+    text-decoration: none;
+}
+b,strong{
+    font-weight: normal;
+}
+em,i{
+    font-style: normal;
+}
+img{
+    border: 0;
+    /* 清除图片下面大于3px的间距 */
+    display: block;
+}
+input{
+    outline: none;
+}
+.clear_fix:after{
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+.clear_fix{
+    zoom: 1;
+}

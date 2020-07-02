@@ -37,6 +37,12 @@ $.get({
                     <h3>${data.goodsPrice}</h3>
                  `
     $('.t').html(htmlStr2);
+    let htmlStr1 ="";
+    htmlStr1 += 
+                 `
+                  <li>${data.goodsDesc}</li>
+                 `
+    $('.t3').html(htmlStr1);
     let htmlStr3 ="";
     htmlStr3 += 
                  `

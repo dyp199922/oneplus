@@ -3,7 +3,7 @@ $('.login1').click(function(){
     $('#login2').css('display','none')
 })
 $('.login2').click(function(){
-    $('#login2').css('display','none')
+    $('#login2').css('display','block')
     $('#login').css('display','none')
 })
 

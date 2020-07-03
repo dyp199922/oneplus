@@ -1,10 +1,10 @@
 $('.regtxt').blur(function checkUser(cb){
-    let reg = /^1\d{10}/;
-    if(!reg.test($(".regtxt").val())){
-        $("#userMsg").css({color:"red"});
-        $("#userMsg").html("格式不正确，手机号码是1开头，一共11位数字");
-        return;
-    }
+    // let reg = /^1\d{10}/;
+    // if(!reg.test($(".regtxt").val())){
+    //     $("#userMsg").css({color:"red"});
+    //     $("#userMsg").html("格式不正确，手机号码是1开头，一共11位数字");
+    //     return;
+    // }
     $.ajax({
         type:'get',
         url:'../php/checkUser.php',
